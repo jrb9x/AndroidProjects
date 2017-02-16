@@ -2,18 +2,26 @@ package com.example.championsapp.beans;
 
 public class Partido {
 
+    private int id;
     private Equipo equipoLocal;
     private Equipo equipoVisitante;
     private String fechaPartido;
     private String horaPartido;
 
-    public Partido() {}
-
-    public Partido(Equipo equipoLocal, Equipo equipoVisitante, String fechaPartido, String horaPartido) {
+    public Partido(int id, Equipo equipoLocal, Equipo equipoVisitante, String fechaPartido, String horaPartido) {
+        this.id = id;
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
         this.fechaPartido = fechaPartido;
         this.horaPartido = horaPartido;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Equipo getEquipoLocal() {
