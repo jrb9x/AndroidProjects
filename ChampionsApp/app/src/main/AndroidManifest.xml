@@ -6,20 +6,24 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_icono_champions"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".activites.SplashScreen"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activites.ListaPartidos" />
-        <activity android:name=".activites.DetallePartido" />
-        <activity android:name=".activites.DetalleEquipo" />
-        <activity android:name=".activites.DetalleJugador" />
+        <activity android:name=".activites.ListaPartidos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activites.DetallePartido"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activites.DetalleEquipo"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activites.DetalleJugador"
+            android:screenOrientation="portrait" />
 
     </application>
 

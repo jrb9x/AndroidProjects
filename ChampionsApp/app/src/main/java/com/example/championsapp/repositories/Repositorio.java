@@ -8,14 +8,14 @@ import com.example.championsapp.beans.Partido;
 
 public class Repositorio {
 
-    private Entrenador luis = new Entrenador(4, "Luis Enrique", 46, R.mipmap.ic_en_barcelona);
+    private Entrenador luis = new Entrenador(1, "Luis Enrique", 46, R.mipmap.ic_en_barcelona);
     private Entrenador thomas = new Entrenador(2, "Thomas Tuchel", 43, R.mipmap.ic_en_dortmund);
-    private Entrenador rui = new Entrenador(1, "Rui Vitória", 46, R.mipmap.ic_en_benfica);
-    private Entrenador zidane = new Entrenador(7, "Zinedine Zidane", 44, R.mipmap.ic_en_madrid);
-    private Entrenador unai = new Entrenador(3, "Unai Emery", 45, R.mipmap.ic_en_psg);
-    private Entrenador sarri = new Entrenador(8, "Maurizio Sarri", 58, R.mipmap.ic_en_napoles);
-    private Entrenador arsene = new Entrenador(6, "Arsène Wenger", 67, R.mipmap.ic_en_arsenal);
-    private Entrenador carlo = new Entrenador(5, "Carlo Ancelotti", 57, R.mipmap.ic_en_bayern);
+    private Entrenador rui = new Entrenador(3, "Rui Vitória", 46, R.mipmap.ic_en_benfica);
+    private Entrenador zidane = new Entrenador(4, "Zinedine Zidane", 44, R.mipmap.ic_en_madrid);
+    private Entrenador unai = new Entrenador(5, "Unai Emery", 45, R.mipmap.ic_en_psg);
+    private Entrenador sarri = new Entrenador(6, "Maurizio Sarri", 58, R.mipmap.ic_en_napoles);
+    private Entrenador arsene = new Entrenador(7, "Arsène Wenger", 67, R.mipmap.ic_en_arsenal);
+    private Entrenador carlo = new Entrenador(8, "Carlo Ancelotti", 57, R.mipmap.ic_en_bayern);
 
 
     private Entrenador[] entrenadores = {luis, thomas, rui, zidane, unai, sarri, arsene, carlo};
@@ -34,10 +34,10 @@ public class Repositorio {
 
     private Jugador[] jugadores = {stegen,pique,alba,mathieu,roberto,busquets,iniesta,rakitic,messi,neymar,suarez};
 
-    private Equipo benfica = new Equipo(1, "Benfica", "Listos para Ganar!", "Estadio da Luz", rui, jugadores, R.mipmap.ic_benfica, R.drawable.camp_nou);
-    private Equipo dortmund = new Equipo(2, "Dortmund", "Listos para Ganar!", "Signal Iduna Park", thomas, jugadores, R.mipmap.ic_dortmund, R.drawable.camp_nou);
-    private Equipo paris = new Equipo(3, "PSG", "Listos para Ganar!", "Parc des Princes", unai, jugadores, R.mipmap.ic_psg, R.drawable.camp_nou);
-    private Equipo barca = new Equipo(4, "Barcelona", "Listos para Ganar!", "Camp Nou", luis, jugadores, R.mipmap.ic_fcb, R.drawable.camp_nou);
+    private Equipo benfica = new Equipo(1, "S.L Benfica", "Listos para Ganar!", "Estadio da Luz", rui, jugadores, R.mipmap.ic_benfica, R.drawable.camp_nou);
+    private Equipo dortmund = new Equipo(2, "B. Dortmund", "Listos para Ganar!", "Signal Iduna Park", thomas, jugadores, R.mipmap.ic_dortmund, R.drawable.camp_nou);
+    private Equipo paris = new Equipo(3, "Paris SG", "Listos para Ganar!", "Parc des Princes", unai, jugadores, R.mipmap.ic_psg, R.drawable.camp_nou);
+    private Equipo barca = new Equipo(4, "F.C Barcelona", "Listos para Ganar!", "Camp Nou", luis, jugadores, R.mipmap.ic_fcb, R.drawable.camp_nou);
 
     private Equipo bayern = new Equipo(5, "Bayern", "Listos para Ganar!", "Allianz Arena", carlo, jugadores, R.mipmap.ic_bayern, R.drawable.camp_nou);
     private Equipo arsenal = new Equipo(6, "Arsenal", "Listos para Ganar!", "Emirates Stadium", arsene, jugadores, R.mipmap.ic_arsenal, R.drawable.camp_nou);

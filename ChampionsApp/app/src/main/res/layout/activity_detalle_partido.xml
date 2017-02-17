@@ -14,23 +14,23 @@
         android:layout_height="150dp"
         card_view:cardUseCompatPadding="true">
 
-        <TextView
-            android:id="@+id/nombre_estadio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:background="#8c000000"
-            android:text="TextView"
-            android:textColor="#ffe3e3e3"
-            android:textSize="25sp"
-            android:textStyle="normal|bold" />
-
         <ImageView
             android:id="@+id/imagen_estadio"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/camp_nou"
             android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nombre_estadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#8c000000"
+            android:text="ESTADIO"
+            android:textColor="#ffe3e3e3"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
     </android.support.v7.widget.CardView>
 
     <TextView

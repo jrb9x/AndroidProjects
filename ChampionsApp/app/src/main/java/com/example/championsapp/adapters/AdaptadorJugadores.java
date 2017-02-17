@@ -12,39 +12,24 @@ import com.example.championsapp.R;
 import com.example.championsapp.beans.Jugador;
 
 public class AdaptadorJugadores extends ArrayAdapter<Jugador> {
+
     public AdaptadorJugadores(Context context, Jugador[] datos) {
         super(context, R.layout.formato_jugadores, datos);
     }
 
     public View getView(int position, View convertView, final ViewGroup parent) {
 
-        View itemView = convertView;
-        ViewHolderJugadores holder;
+        LayoutInflater inflater = LayoutInflater.from(getContext());
+        View itemView  = inflater.inflate(R.layout.formato_jugadores, null);
 
-        if (itemView == null) {
-            LayoutInflater inflater = LayoutInflater.from(getContext());
-            itemView = inflater.inflate(R.layout.formato_jugadores, null);
-            holder = new ViewHolderJugadores();
-
-            holder.imagenJugador = (ImageView) itemView.findViewById(R.id.imagen_jugador);
-            holder.nombreDorsal = (TextView) itemView.findViewById(R.id.nombre_dorsal);
-
-            itemView.setTag(holder);
-
-        } else{
-            holder = (ViewHolderJugadores) itemView.getTag();
-        }
+        ImageView imagenJugador = (ImageView) itemView.findViewById(R.id.imagen_jugador);
+        TextView nombreDorsal = (TextView) itemView.findViewById(R.id.nombre_dorsal);
 
         final Jugador jugador = getItem(position);
 
-        holder.imagenJugador.setImageResource(jugador.getImagen());
-        holder.nombreDorsal.setText(jugador.getNombre() + " #"+jugador.getDorsal());
+        imagenJugador.setImageResource(jugador.getImagen());
+        nombreDorsal.setText(jugador.getNombre() + " #"+jugador.getDorsal());
 
         return (itemView);
-    }
-
-    private class ViewHolderJugadores {
-        ImageView imagenJugador;
-        TextView nombreDorsal;
     }
 }
