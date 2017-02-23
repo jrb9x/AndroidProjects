@@ -24,6 +24,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".activites.DetalleJugador"
             android:screenOrientation="portrait" />
+        <activity android:name=".activites.DetalleEntrenador"
+            android:screenOrientation="portrait" />
 
     </application>
 

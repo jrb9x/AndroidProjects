@@ -88,13 +88,23 @@ public class DetalleEquipo extends AppCompatActivity {
         escudoEquipo.setImageResource(detalleEquipo.getEscudo());
     }
 
-    private void getEntrenador(Equipo detalleEquipo) {
+    private void getEntrenador(final Equipo detalleEquipo) {
         final Entrenador entrenador = detalleEquipo.getEntrenador();
 
         nombreEntrenador = (TextView) findViewById(R.id.txt2);
         imagenEntrenador = (ImageView) findViewById(R.id.imagen_entrenador);
         nombreEntrenador.setText(entrenador.getNombre());
         imagenEntrenador.setImageResource(entrenador.getImagen());
+        imagenEntrenador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetalleEquipo.this,DetalleEntrenador.class);
+                intent.putExtra("idEntrnador", entrenador.getId());
+                intent.putExtra("nombreEquipo",detalleEquipo.getNombreEquipo());
+                intent.putExtra("escudoEquipo",detalleEquipo.getEscudo());
+                startActivity(intent);
+            }
+        });
     }
 
     private void getJugadores(Equipo detalleEquipo) {

@@ -89,7 +89,8 @@
                 android:id="@+id/imagen_entrenador"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@mipmap/ic_en_barcelona" />
+                android:src="@mipmap/ic_en_barcelona"
+                android:layout_marginBottom="5dp"/>/>
 
             <TextView
                 android:id="@+id/txt2"
